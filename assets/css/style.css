@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Oswald:wght@200;400;500;600;700&display=swap');
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a,a:hover{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+	padding: 0;
+}
+img{
+	vertical-align: middle;
+}
+ul,ol,li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* -------Common css End-------*/
+/*Header top Css Start*/
+.header-top{}
+.header-top .left{}
+.header-top .left ul{}
+.header-top .left ul li{
+	font-size: 13px;
+    margin-right: 10px;
+    color: #f0f0f0;
+}
+.header-top .right ul li{
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+    margin-left: 10px;
+	color: #fff;
+}
+.header-top .right ul li i{
+	margin-right: 5px;
+	color: #707070;
+}
+/*Header top Css End*/
+header{
+
+}
+.hero_area{
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	padding: 15px 0px;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+	transition: 0.3s;
+	z-index: 2;
+}
+.sticky {
+	transform: translateY(-40px);
+}
+.hero_area .logo{}
+.hero_area .social{}
+.hero_area .social ul{}
+.hero_area .social ul li{
+	margin: 0px 10px;
+}
+.hero_area .social ul li a{
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+.hero_area .social ul li a:hover{
+	background: #000 !important;
+}
+/*Menu CSS Start*/
+.menu{
+	display: ;
+}
+.menu ul{
+	display: flex;
+}
+.menu ul li{
+	margin-left: 20px;
+}
+.menu ul li a,
+.menu2 ul li a{
+	color: #283747;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+.menu ul li a.active,
+.menu2 ul li a.active,
+.menu ul li a:hover,
+.menu2 ul li a:hover
+{
+	color: #f00;
+}
+.menu2, .menusticky{
+	display: none;
+}
+/*Menu CSS End*/
+
+/*-----Menu Icon-----*/
+.menu-icon{
+    display: none;
+  }
+.menubar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #555555;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+  background-color: #f00;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  background-color: #f00;
+}
+/*------Menu Icon End*/
+/*-----Banner area css Strat*/
+.owl-carousel{
+	position: relative;
+}
+.ban-item{
+	width: 100%;
+	height: 500px;
+}
+.ban-item img{
+	hyphens: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev
+{
+	font-size: 35px;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000 !important;
+    line-height: 0px;
+    align-items: center;
+    border-radius: 50%;
+}
+.owl-next{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+}
+.owl-prev{
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	}
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover
+{
+	background: #000;
+	color: #fff;
+}
+.owl-dots {
+    margin-top: 10px;
+    position: absolute;
+    top: 36%;
+    left: 55px;
+  }
+  .ban-item{
+  	position: relative;
+  }
+.ban-content {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    text-align: center;
+    color: #fff;
+}
+.ban-content h2{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bold;
+	color: #f1f1f1;
+	margin-bottom: 15px;
+}
+.ban-content p{
+	font-size: 16px;
+	font-weight: bold;margin-bottom: 15px;
+}
+.ban-content .btn{
+	padding: 10px 30px !important;
+}
+/*-----Banner area css End*/
+/*-------Clint Area Strat--------*/
+section{
+	padding: 60px 0px;
+}
+.slick-clint img{
+	width: 150px;
+}
+.port-item.slick-slide.slick-active:focus,
+.item.slick-slide.slick-active:focus
+{
+	outline: none;
+}
+/*-------Clint Area End--------*/
+/*------Product-------*/
+.section-name{
+	text-align: center;
+}
+.section-name h2{
+	color: #ddd;
+}
+.section-name h2 span{
+	color: #0d6efd;
+}
+.product{}
+.product-items{
+}
+.product-items .port-item,
+.product-items2 .port-item
+{
+	width: 300px;
+	margin: 10px;
+	transition: 0.3s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.25)
+}
+.product-items .port-item:hover,
+.product-items2 .port-item:hover
+{
+	transform: scale(1.05);
+}
+.port-item .thumb{
+	width: 100%;
+	height: 200px;
+}
+.port-item .thumb img{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.port-item .content{
+	text-align: center;
+}
+.port-item .content h4{
+	margin-bottom: 10px;
+}
+.port-item .content p{
+	margin-bottom: 10px;
+}
+.port-item .content p span{
+	display: none;
+}
+.footer{
+	background: #222;
+	color: #fff;
+}
+.footer h3{
+	color: #ddd;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.footer ul{}
+.footer ul li{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.foot-link{
+	display: flex;
+	flex-wrap: wrap;
+}
+.foot-link li{
+	width: 50%;
+}
+.foot-link li a{
+	color: #fff;
+	transition: 0.3s
+}
+.foot-link li a:hover{
+	color: #f00;
+}
+@media (max-width: 992px){
+	.menu{
+		display: none;
+	}
+	.menu2 ul{
+	position: fixed;
+	margin: 0 auto;
+	width: 100%;
+	height: 100vh;
+	top: 115px;
+	left: 0;
+	text-align: center;
+	background: rgba(0,0,0,0.25);
+	transition: 0.3s;
+	}
+	.menusticky{
+		transform: translateY(-45px);
+	}
+	.menu2 ul li{
+		margin-top: 20px;
+	}
+	.menu2 ul li a{
+		color: #f1f1f1;
+	}
+	.menu-icon{
+		display: block;
+	}
+	.ban-item{
+		height: 300px;
+	}
+}
+@media (max-width: 425px){
+	.hero_area .social{
+		position: fixed;
+		top: 130px;
+		left: 0;
+	}
+	.hero_area .social ul{
+		flex-direction: column;
+	}
+	.hero_area .social ul li a{
+		border-radius: 0;
+	}
+}
